@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div id="main-page">
+        <h1> To Do List</h1>
+        <div id="filter">
+            <button class="filter-btn selected" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="high">High Priority</button>
+            <button class="filter-btn" data-filter="mid">Medium Priority</button>
+            <button class="filter-btn" data-filter="low">Low Priority</button>
+            <button class="filter-btn" data-filter="checked">Completed</button>            
+        </div>
+        <hr>
+        <div id="tasks">
+            <ul class="task" id="high"></ul>
+            <ul class="task" id="mid"></ul>
+            <ul class="task" id="low"></ul>
+            <ul class="task" id="checked"></ul>
+        </div>
+        <div class="floating-buttons">
+            <button class="float-btn" id="theme-btn"><img id="theme-img" src="icons/moon.png" alt="dark"></button>
+            <button class="float-btn" id="add-btn">+</button>
+        </div>
+    </div>
+    <div id="add-page">
+        <div id="add-box">
+            <h2> Add Task</h2>
+            <div id="input">
+                <input type="text" placeholder="Add Task" id="add-input">
+                <div class="priority-selector">
+                    <p id="para">Select Priority </p>
+                    <button class="priority-btn" data-priority="high">High</button>
+                    <button class="priority-btn" data-priority="mid">Medium</button>
+                    <button class="priority-btn" data-priority="low">Low</button>
+                </div>
+            </div>
+            <div id="pop-option">
+                <button class="popup-btn" id="cancel-btn">Cancel</button>
+                <button class="popup-btn" id="apply-btn">Apply</button>
+            </div>
+        </div>
+    </div>
+</body> 
+<script src="script.js"></script>
+</html>
